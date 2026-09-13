@@ -1,6 +1,6 @@
 # LLM Binding Learnability
 
-Code and data for a study of **Principle A** (reflexive binding) in large language models (Saban, 2026).
+Code and data for a study of **Principle A** (reflexive binding) in large language models.
 
 The repository contains the 384-sentence factorial benchmarks, Colab scoring notebooks, token surprisal scores from five language models, the Python analysis, and the paper figures.
 
