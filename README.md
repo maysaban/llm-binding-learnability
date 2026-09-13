@@ -23,7 +23,7 @@ analysis/             run_analysis.py, diagnostics.csv, figures/
 
 ## Scoring
 
-BabyLlama and Qwen-2.5-7B were scored with `minicons` (`base_two=True`). Llama-3.1-8B, Llama-3.1-70B, and Qwen-2.5-72B used shifted cross-entropy in bits. The 70B and 72B models were the Unsloth 4-bit NF4 checkpoints.
+BabyLlama and Qwen-2.5-7B were scored with `minicons` (`base_two=True`). Llama-3.1-8B, Llama-3.1-70B, and Qwen-2.5-72B used shifted cross-entropy in bits. Llama-3.1-70B was the official checkpoint in 4-bit NF4 via bitsandbytes; Qwen-2.5-72B was the Unsloth 4-bit NF4 checkpoint.
 
 ```
 notebooks/score_babyllama_qwen7b.ipynb
