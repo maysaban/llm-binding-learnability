@@ -1,9 +1,0 @@
-Model: Qwen-2.5-7B
-Experiment: Exp 3: Logophoric diagnostic
-Formula: surprisal ~ local_c * context_c + (1 | item_id)
-Engine: by-item contrast t-tests (df = 31)
-
-Intercept             estimate=   6.172  se= 0.214  t(31)= 28.90  p=5.552e-24
-local_c               estimate=  -2.486  se= 0.202  t(31)=-12.30  p=1.86e-13
-context_c             estimate=  -2.069  se= 0.443  t(31)= -4.67  p=5.551e-05
-local_c:context_c     estimate=   0.127  se= 0.359  t(31)=  0.35  p=0.7253

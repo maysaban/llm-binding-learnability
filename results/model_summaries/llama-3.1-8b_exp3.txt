@@ -1,9 +1,0 @@
-Model: Llama-3.1-8B
-Experiment: Exp 3: Logophoric diagnostic
-Formula: surprisal ~ local_c * context_c + (1 | item_id)
-Engine: by-item contrast t-tests (df = 31)
-
-Intercept             estimate=   6.405  se= 0.180  t(31)= 35.68  p=9.716e-27
-local_c               estimate=  -2.616  se= 0.161  t(31)=-16.21  p=1.094e-16
-context_c             estimate=  -0.911  se= 0.357  t(31)= -2.55  p=0.01595
-local_c:context_c     estimate=   1.251  se= 0.359  t(31)=  3.48  p=0.001502

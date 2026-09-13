@@ -1,0 +1,13 @@
+# Analysis (Table 2 and figures)
+pandas>=2.0
+numpy>=1.24
+matplotlib>=3.8
+scipy>=1.11
+
+# Scoring notebooks
+torch
+transformers
+accelerate
+minicons
+bitsandbytes
+huggingface_hub

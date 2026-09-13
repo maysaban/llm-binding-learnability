@@ -1,19 +1,19 @@
-"""Linear mixed-effects analysis for llm-binding-learnability.
+"""Item-level contrast analysis for llm-binding-learnability.
 
-Canonical specification is the R script (`run_analysis.R`, lme4 / lmerTest).
-This Python runner estimates the same random-intercept contrasts with
-by-item t-tests so the pipeline can be executed when R is not installed.
-In this balanced 32×4 within-item design those tests match lme4 simple
-effects for `(1 | item_id)`.
+Each model and experiment is analysed separately. Every lexical item
+appears in all four cells of a 2×2, so diagnostics are item-wise
+surprisal differences tested against zero with two-sided one-sample
+t-tests (df = 31).
 
-Formulas (one fit per model per experiment):
-    Exp 1: surprisal ~ local_match * matrix_match + (1 | item_id)
-    Exp 2: surprisal ~ head_match * distractor_match + (1 | item_id)
-    Exp 3: surprisal ~ local_match * context_type + (1 | item_id)
+Contrasts (one set per model per experiment):
+    Exp 1: local match × matrix match
+    Exp 2: head match × distractor match
+    Exp 3: local match × context type (co-argument vs picture-NP)
 
 Two-level factors are coded ±0.5 (mismatch = -0.5, match = +0.5; for
 context, coarg = -0.5, picture_np = +0.5). Coefficients are therefore
-surprisal differences. Negative = the +/match level is more expected.
+surprisal differences in bits. Negative = the +/match level is more
+expected.
 
 Run from the repo root:
     python analysis/run_analysis.py
@@ -34,10 +34,9 @@ from scipy.stats import t as student_t
 
 ROOT = Path(__file__).resolve().parent.parent
 RESULTS_DIR = ROOT / "results"
-OUTPUT_DIR = RESULTS_DIR
-TABLE_DIR = OUTPUT_DIR / "tables"
-FIGURE_DIR = OUTPUT_DIR / "figures"
-MODEL_DIR = OUTPUT_DIR / "model_summaries"
+ANALYSIS_DIR = Path(__file__).resolve().parent
+TABLE_DIR = ANALYSIS_DIR
+FIGURE_DIR = ANALYSIS_DIR / "figures"
 
 MODEL_ORDER = [
     "babyllama",
@@ -58,28 +57,32 @@ EXPERIMENT_LABELS = {
     2: "Exp 2: Structural hierarchy",
     3: "Exp 3: Logophoric diagnostic",
 }
-FORMULAS = {
-    1: "surprisal ~ local_c * matrix_c",
-    2: "surprisal ~ head_c * distractor_c",
-    3: "surprisal ~ local_c * context_c",
-}
 
 PALETTE_TWO = {"mismatch": "#D55E00", "match": "#0072B2"}
 PALETTE_CONTEXT = {"coarg": "#D55E00", "picture_np": "#009E73"}
 
 
+FILE_MODEL = {
+    "babyllama": "babyllama",
+    "qwen": "qwen-2.5-7b",
+    "qwen7b": "qwen-2.5-7b",
+    "qwen72b": "qwen-2.5-72b",
+    "llama8b": "llama-3.1-8b",
+    "llama70b": "llama-3.1-70b",
+}
+
+
 def discover_result_files() -> list[tuple[str, int, Path]]:
     found = []
-    for path in RESULTS_DIR.rglob("*.csv"):
-        parts = path.relative_to(RESULTS_DIR).parts
-        if len(parts) < 2:
+    for path in RESULTS_DIR.glob("results_exp*.csv"):
+        rest = path.stem.removeprefix("results_")  # exp1_babyllama
+        experiment_part, _, model_part = rest.partition("_")
+        if not experiment_part.startswith("exp") or not model_part:
             continue
-        model, experiment_dir = parts[0], parts[1]
-        if model not in MODEL_LABELS:
+        experiment = int("".join(ch for ch in experiment_part if ch.isdigit()))
+        model = FILE_MODEL.get(model_part)
+        if model is None or experiment not in EXPERIMENT_LABELS:
             continue
-        if not experiment_dir.startswith("experiment"):
-            continue
-        experiment = int("".join(ch for ch in experiment_dir if ch.isdigit()))
         found.append((model, experiment, path))
     found.sort(key=lambda row: (MODEL_ORDER.index(row[0]), row[1]))
     if not found:
@@ -131,11 +134,7 @@ def validate(df: pd.DataFrame, model: str, experiment: int) -> None:
 
 
 def by_item_test(values: pd.Series) -> dict:
-    """One-sample t-test of item-wise contrast scores (df = n_items - 1).
-
-    In this balanced 32×4 within-item design, that is the random-intercept
-    LME test of the corresponding contrast.
-    """
+    """One-sample t-test of item-wise contrast scores (df = n_items - 1)."""
     values = pd.to_numeric(values, errors="coerce").dropna()
     n = int(len(values))
     estimate = float(values.mean())
@@ -149,23 +148,6 @@ def wide_surprisal(df: pd.DataFrame) -> pd.DataFrame:
     return df.pivot(index="item_id", columns="condition", values="surprisal")
 
 
-def tidy_fixed_from_items(item_coefs: dict[str, pd.Series], model: str, experiment: int, formula: str) -> pd.DataFrame:
-    rows = []
-    for term, values in item_coefs.items():
-        stats = by_item_test(values)
-        rows.append(
-            {
-                "model": model,
-                "model_label": MODEL_LABELS[model],
-                "experiment": experiment,
-                "formula": f"{formula} + (1 | item_id)",
-                "term": term,
-                **stats,
-            }
-        )
-    return pd.DataFrame(rows)
-
-
 def diagnostic_row(model, experiment, diagnostic, contrast, stats, note):
     return {
         "model": model,
@@ -175,45 +157,6 @@ def diagnostic_row(model, experiment, diagnostic, contrast, stats, note):
         "contrast": contrast,
         **stats,
         "note": note,
-    }
-
-
-def exp1_item_coefs(wide: pd.DataFrame) -> dict[str, pd.Series]:
-    plus_plus = wide["+Local+Matrix"]
-    plus_minus = wide["+Local-Matrix"]
-    minus_plus = wide["-Local+Matrix"]
-    minus_minus = wide["-Local-Matrix"]
-    return {
-        "Intercept": wide.mean(axis=1),
-        "local_c": (plus_plus + plus_minus) / 2 - (minus_plus + minus_minus) / 2,
-        "matrix_c": (plus_plus + minus_plus) / 2 - (plus_minus + minus_minus) / 2,
-        "local_c:matrix_c": (plus_plus - plus_minus) - (minus_plus - minus_minus),
-    }
-
-
-def exp2_item_coefs(wide: pd.DataFrame) -> dict[str, pd.Series]:
-    plus_plus = wide["+Head+Distractor"]
-    plus_minus = wide["+Head-Distractor"]
-    minus_plus = wide["-Head+Distractor"]
-    minus_minus = wide["-Head-Distractor"]
-    return {
-        "Intercept": wide.mean(axis=1),
-        "head_c": (plus_plus + plus_minus) / 2 - (minus_plus + minus_minus) / 2,
-        "distractor_c": (plus_plus + minus_plus) / 2 - (plus_minus + minus_minus) / 2,
-        "head_c:distractor_c": (plus_plus - plus_minus) - (minus_plus - minus_minus),
-    }
-
-
-def exp3_item_coefs(wide: pd.DataFrame) -> dict[str, pd.Series]:
-    plus_coarg = wide["+Local+Coarg"]
-    plus_picture = wide["+Local+Picture"]
-    minus_coarg = wide["-Local+Coarg"]
-    minus_picture = wide["-Local+Picture"]
-    return {
-        "Intercept": wide.mean(axis=1),
-        "local_c": (plus_coarg + plus_picture) / 2 - (minus_coarg + minus_picture) / 2,
-        "context_c": (plus_picture + minus_picture) / 2 - (plus_coarg + minus_coarg) / 2,
-        "local_c:context_c": (plus_picture - minus_picture) - (plus_coarg - minus_coarg),
     }
 
 
@@ -407,54 +350,11 @@ def plot_diagnostics(diagnostics: pd.DataFrame) -> None:
     plt.close(fig)
 
 
-def fmt_p(p: float) -> str:
-    if pd.isna(p):
-        return "NA"
-    return "< .001" if p < 0.001 else f"{p:.3f}"
-
-
-def write_summary(diagnostics: pd.DataFrame) -> None:
-    lines = [
-        "# Analysis summary",
-        "",
-        "Each LLM was analysed separately.",
-        "Python reports by-item t-tests of the planned contrasts (df = 31).",
-        "In this balanced 32×4 within-item 2×2, those tests match random-intercept",
-        "LME simple effects for `(1 | item_id)`.",
-        "",
-        "## Key diagnostics",
-        "",
-    ]
-    for diag in [
-        "local_mismatch_penalty",
-        "matrix_rescue",
-        "head_mismatch_penalty",
-        "proximity_trap",
-        "mismatch_penalty_coarg",
-        "mismatch_penalty_picture",
-        "logophoric_exemption",
-    ]:
-        block = diagnostics[diagnostics["diagnostic"] == diag]
-        if block.empty:
-            continue
-        lines.append(f"### {diag}")
-        lines.append("")
-        for _, row in block.iterrows():
-            flag = "  [supports predicted heuristic/exemption]" if bool(row.get("supports_heuristic")) else ""
-            lines.append(
-                f"- {row['model_label']}: estimate = {row['estimate']:.3f}, "
-                f"t({row['df']:.0f}) = {row['t']:.2f}, p = {fmt_p(row['p'])}{flag}"
-            )
-        lines.append("")
-    (OUTPUT_DIR / "summary.md").write_text("\n".join(lines), encoding="utf-8")
-
-
 def main() -> None:
-    for path in (OUTPUT_DIR, TABLE_DIR, FIGURE_DIR, MODEL_DIR):
+    for path in (TABLE_DIR, FIGURE_DIR):
         path.mkdir(parents=True, exist_ok=True)
 
     frames = []
-    fixed_parts = []
     diagnostic_parts = []
 
     for model, experiment, path in discover_result_files():
@@ -470,28 +370,7 @@ def main() -> None:
         validate(df, model, experiment)
         frames.append(df)
 
-        formula = FORMULAS[experiment]
-        print(f"Fitting {MODEL_LABELS[model]} / experiment {experiment}")
-        wide = wide_surprisal(df)
-        coef_fn = {1: exp1_item_coefs, 2: exp2_item_coefs, 3: exp3_item_coefs}[experiment]
-        item_coefs = coef_fn(wide)
-        summary_path = MODEL_DIR / f"{model}_exp{experiment}.txt"
-        lines = [
-            f"Model: {MODEL_LABELS[model]}",
-            f"Experiment: {EXPERIMENT_LABELS[experiment]}",
-            f"Formula: {formula} + (1 | item_id)",
-            "Engine: by-item contrast t-tests (df = 31)",
-            "",
-        ]
-        for term, values in item_coefs.items():
-            stats = by_item_test(values)
-            lines.append(
-                f"{term:20s}  estimate={stats['estimate']:8.3f}  "
-                f"se={stats['se']:6.3f}  t({stats['df']:.0f})={stats['t']:6.2f}  "
-                f"p={stats['p']:.4g}"
-            )
-        summary_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
-        fixed_parts.append(tidy_fixed_from_items(item_coefs, model, experiment, formula))
+        print(f"Analysing {MODEL_LABELS[model]} / experiment {experiment}")
         if experiment == 1:
             diagnostic_parts.extend(diagnostics_exp1(df, model))
         elif experiment == 2:
@@ -500,13 +379,6 @@ def main() -> None:
             diagnostic_parts.extend(diagnostics_exp3(df, model))
 
     cell_means = cell_means_table(frames)
-    cell_means.to_csv(TABLE_DIR / "cell_means.csv", index=False)
-
-    fixed_effects = pd.concat(fixed_parts, ignore_index=True)
-    fixed_effects["significant"] = fixed_effects["p"] < 0.05
-    fixed_effects["model"] = pd.Categorical(fixed_effects["model"], MODEL_ORDER, ordered=True)
-    fixed_effects = fixed_effects.sort_values(["experiment", "model", "term"])
-    fixed_effects.to_csv(TABLE_DIR / "lme_fixed_effects.csv", index=False)
 
     diagnostics = pd.DataFrame(diagnostic_parts)
     diagnostics["significant"] = diagnostics["p"] < 0.05
@@ -573,8 +445,7 @@ def main() -> None:
         "fig3_logophor",
     )
     plot_diagnostics(diagnostics)
-    write_summary(diagnostics)
-    print(f"Wrote tables to {TABLE_DIR}")
+    print(f"Wrote {TABLE_DIR / 'diagnostics.csv'}")
     print(f"Wrote figures to {FIGURE_DIR}")
     print("Done.")
 

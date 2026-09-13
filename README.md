@@ -2,40 +2,41 @@
 
 Code and data for a study of **Principle A** (reflexive binding) in large language models (Saban, 2026).
 
-The repository contains the 384-sentence factorial benchmarks, token surprisal scores from five language models, the Python analysis that produced Table 2 / Figure 4, and the paper figures.
+The repository contains the 384-sentence factorial benchmarks, Colab scoring notebooks, token surprisal scores from five language models, the Python analysis, and the paper figures.
 
 ## Layout
 
 ```
 data/                 384 sentences with condition labels (3 × 128)
-analysis/             run_analysis.py (by-item t-tests, df = 31)
-results/{model}/      raw surprisal CSVs at the reflexive token (bits)
-results/tables/       diagnostics.csv and cell means
-results/figures/      Figures 1–4 (PNG and PDF)
+notebooks/            Colab scripts that scored the models
+results/              raw surprisal CSVs at the reflexive (bits)
+analysis/             run_analysis.py, diagnostics.csv, figures/
 ```
-
-## Reproduce the tables and figures
-
-```powershell
-pip install -r analysis/requirements.txt
-python analysis/run_analysis.py
-```
-
-Outputs are written to `results/tables/` and `results/figures/`.
 
 ## Stimuli
 
-Each experiment is a balanced 2×2 with 32 lexical items × 4 conditions:
-
 | File | Experiment | Factors |
 |---|---|---|
-| `data/experiment1.csv` | Locality domains | Local × Matrix |
-| `data/experiment2.csv` | Structural hierarchy | Head × Distractor |
-| `data/experiment3.csv` | Logophoric diagnostic | Local × Context |
-| `data/all_sentences.csv` | All 384 evaluation sentences | |
+| `data/exp1_locality.csv` | Locality domains | Local × Matrix |
+| `data/exp2_hierarchy.csv` | Structural hierarchy | Head × Distractor |
+| `data/exp3_logophoric.csv` | Logophoric diagnostic | Local × Context |
 
-Stimulus-generation code lives in `src/`.
+## Scoring
 
-## Models
+BabyLlama and Qwen-2.5-7B were scored with `minicons` (`base_two=True`). Llama-3.1-8B, Llama-3.1-70B, and Qwen-2.5-72B used shifted cross-entropy in bits. The 70B and 72B models were the Unsloth 4-bit NF4 checkpoints.
 
-BabyLlama (100M), Qwen-2.5-7B/72B, Llama-3.1-8B/70B. Surprisal is measured in bits at the target reflexive (`himself` / `herself` / `themselves`).
+```
+notebooks/score_babyllama_qwen7b.ipynb
+notebooks/score_llama_qwen72b.ipynb
+```
+
+Gated Llama checkpoints need a Hugging Face login. In Colab, put the token in a secret named `HF_TOKEN`. Do not paste a token into the notebook.
+
+## Analysis
+
+```powershell
+pip install -r requirements.txt
+python analysis/run_analysis.py
+```
+
+This writes `analysis/diagnostics.csv` and `analysis/figures/` (by-item *t*-tests, df = 31).

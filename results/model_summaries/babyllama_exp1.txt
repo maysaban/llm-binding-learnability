@@ -1,9 +1,0 @@
-Model: BabyLlama
-Experiment: Exp 1: Locality domains
-Formula: surprisal ~ local_c * matrix_c + (1 | item_id)
-Engine: by-item contrast t-tests (df = 31)
-
-Intercept             estimate=   7.792  se= 0.277  t(31)= 28.13  p=1.243e-23
-local_c               estimate=  -2.831  se= 0.160  t(31)=-17.69  p=9.364e-18
-matrix_c              estimate=  -1.720  se= 0.084  t(31)=-20.48  p=1.421e-19
-local_c:matrix_c      estimate=   1.530  se= 0.095  t(31)= 16.05  p=1.444e-16
