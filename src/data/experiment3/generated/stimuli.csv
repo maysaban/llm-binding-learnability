@@ -1,0 +1,129 @@
+item_id,target,matrix_antecedent,local_matching,local_mismatching,matrix_frame,coarg_verb,picture_frame,condition,local_match,context_type,sentence
+1,himself,John,Bill,Mary,believes that,criticized,saw a picture of,+Local+Coarg,1,coarg,John believes that Bill criticized himself.
+1,himself,John,Bill,Mary,believes that,criticized,saw a picture of,+Local+Picture,1,picture_np,John believes that Bill saw a picture of himself.
+1,himself,John,Bill,Mary,believes that,criticized,saw a picture of,-Local+Coarg,0,coarg,John believes that Mary criticized himself.
+1,himself,John,Bill,Mary,believes that,criticized,saw a picture of,-Local+Picture,0,picture_np,John believes that Mary saw a picture of himself.
+2,herself,Sarah,Emma,Daniel,thinks that,praised,liked a picture of,+Local+Coarg,1,coarg,Sarah thinks that Emma praised herself.
+2,herself,Sarah,Emma,Daniel,thinks that,praised,liked a picture of,+Local+Picture,1,picture_np,Sarah thinks that Emma liked a picture of herself.
+2,herself,Sarah,Emma,Daniel,thinks that,praised,liked a picture of,-Local+Coarg,0,coarg,Sarah thinks that Daniel praised herself.
+2,herself,Sarah,Emma,Daniel,thinks that,praised,liked a picture of,-Local+Picture,0,picture_np,Sarah thinks that Daniel liked a picture of herself.
+3,himself,Peter,James,Laura,was glad that,defended,found a picture of,+Local+Coarg,1,coarg,Peter was glad that James defended himself.
+3,himself,Peter,James,Laura,was glad that,defended,found a picture of,+Local+Picture,1,picture_np,Peter was glad that James found a picture of himself.
+3,himself,Peter,James,Laura,was glad that,defended,found a picture of,-Local+Coarg,0,coarg,Peter was glad that Laura defended himself.
+3,himself,Peter,James,Laura,was glad that,defended,found a picture of,-Local+Picture,0,picture_np,Peter was glad that Laura found a picture of himself.
+4,herself,Rachel,Hannah,Michael,believes that,embarrassed,bought a picture of,+Local+Coarg,1,coarg,Rachel believes that Hannah embarrassed herself.
+4,herself,Rachel,Hannah,Michael,believes that,embarrassed,bought a picture of,+Local+Picture,1,picture_np,Rachel believes that Hannah bought a picture of herself.
+4,herself,Rachel,Hannah,Michael,believes that,embarrassed,bought a picture of,-Local+Coarg,0,coarg,Rachel believes that Michael embarrassed herself.
+4,herself,Rachel,Hannah,Michael,believes that,embarrassed,bought a picture of,-Local+Picture,0,picture_np,Rachel believes that Michael bought a picture of herself.
+5,himself,David,Tom,Susan,thinks that,blamed,looked at a picture of,+Local+Coarg,1,coarg,David thinks that Tom blamed himself.
+5,himself,David,Tom,Susan,thinks that,blamed,looked at a picture of,+Local+Picture,1,picture_np,David thinks that Tom looked at a picture of himself.
+5,himself,David,Tom,Susan,thinks that,blamed,looked at a picture of,-Local+Coarg,0,coarg,David thinks that Susan blamed himself.
+5,himself,David,Tom,Susan,thinks that,blamed,looked at a picture of,-Local+Picture,0,picture_np,David thinks that Susan looked at a picture of himself.
+6,herself,Laura,Mary,Robert,thought that,admired,saw a picture of,+Local+Coarg,1,coarg,Laura thought that Mary admired herself.
+6,herself,Laura,Mary,Robert,thought that,admired,saw a picture of,+Local+Picture,1,picture_np,Laura thought that Mary saw a picture of herself.
+6,herself,Laura,Mary,Robert,thought that,admired,saw a picture of,-Local+Coarg,0,coarg,Laura thought that Robert admired herself.
+6,herself,Laura,Mary,Robert,thought that,admired,saw a picture of,-Local+Picture,0,picture_np,Laura thought that Robert saw a picture of herself.
+7,himself,Michael,Daniel,Anna,believes that,humiliated,liked a picture of,+Local+Coarg,1,coarg,Michael believes that Daniel humiliated himself.
+7,himself,Michael,Daniel,Anna,believes that,humiliated,liked a picture of,+Local+Picture,1,picture_np,Michael believes that Daniel liked a picture of himself.
+7,himself,Michael,Daniel,Anna,believes that,humiliated,liked a picture of,-Local+Coarg,0,coarg,Michael believes that Anna humiliated himself.
+7,himself,Michael,Daniel,Anna,believes that,humiliated,liked a picture of,-Local+Picture,0,picture_np,Michael believes that Anna liked a picture of himself.
+8,herself,Rebecca,Emily,Ben,was glad that,photographed,found a picture of,+Local+Coarg,1,coarg,Rebecca was glad that Emily photographed herself.
+8,herself,Rebecca,Emily,Ben,was glad that,photographed,found a picture of,+Local+Picture,1,picture_np,Rebecca was glad that Emily found a picture of herself.
+8,herself,Rebecca,Emily,Ben,was glad that,photographed,found a picture of,-Local+Coarg,0,coarg,Rebecca was glad that Ben photographed herself.
+8,herself,Rebecca,Emily,Ben,was glad that,photographed,found a picture of,-Local+Picture,0,picture_np,Rebecca was glad that Ben found a picture of herself.
+9,himself,James,Peter,Hannah,was upset that,praised,bought a picture of,+Local+Coarg,1,coarg,James was upset that Peter praised himself.
+9,himself,James,Peter,Hannah,was upset that,praised,bought a picture of,+Local+Picture,1,picture_np,James was upset that Peter bought a picture of himself.
+9,himself,James,Peter,Hannah,was upset that,praised,bought a picture of,-Local+Coarg,0,coarg,James was upset that Hannah praised himself.
+9,himself,James,Peter,Hannah,was upset that,praised,bought a picture of,-Local+Picture,0,picture_np,James was upset that Hannah bought a picture of himself.
+10,herself,Emma,Susan,David,thinks that,defended,looked at a picture of,+Local+Coarg,1,coarg,Emma thinks that Susan defended herself.
+10,herself,Emma,Susan,David,thinks that,defended,looked at a picture of,+Local+Picture,1,picture_np,Emma thinks that Susan looked at a picture of herself.
+10,herself,Emma,Susan,David,thinks that,defended,looked at a picture of,-Local+Coarg,0,coarg,Emma thinks that David defended herself.
+10,herself,Emma,Susan,David,thinks that,defended,looked at a picture of,-Local+Picture,0,picture_np,Emma thinks that David looked at a picture of herself.
+11,himself,Robert,Ben,Rachel,believes that,embarrassed,saw a picture of,+Local+Coarg,1,coarg,Robert believes that Ben embarrassed himself.
+11,himself,Robert,Ben,Rachel,believes that,embarrassed,saw a picture of,+Local+Picture,1,picture_np,Robert believes that Ben saw a picture of himself.
+11,himself,Robert,Ben,Rachel,believes that,embarrassed,saw a picture of,-Local+Coarg,0,coarg,Robert believes that Rachel embarrassed himself.
+11,himself,Robert,Ben,Rachel,believes that,embarrassed,saw a picture of,-Local+Picture,0,picture_np,Robert believes that Rachel saw a picture of himself.
+12,herself,Mary,Anna,Tom,was glad that,blamed,liked a picture of,+Local+Coarg,1,coarg,Mary was glad that Anna blamed herself.
+12,herself,Mary,Anna,Tom,was glad that,blamed,liked a picture of,+Local+Picture,1,picture_np,Mary was glad that Anna liked a picture of herself.
+12,herself,Mary,Anna,Tom,was glad that,blamed,liked a picture of,-Local+Coarg,0,coarg,Mary was glad that Tom blamed herself.
+12,herself,Mary,Anna,Tom,was glad that,blamed,liked a picture of,-Local+Picture,0,picture_np,Mary was glad that Tom liked a picture of herself.
+13,himself,Daniel,Michael,Laura,thinks that,admired,found a picture of,+Local+Coarg,1,coarg,Daniel thinks that Michael admired himself.
+13,himself,Daniel,Michael,Laura,thinks that,admired,found a picture of,+Local+Picture,1,picture_np,Daniel thinks that Michael found a picture of himself.
+13,himself,Daniel,Michael,Laura,thinks that,admired,found a picture of,-Local+Coarg,0,coarg,Daniel thinks that Laura admired himself.
+13,himself,Daniel,Michael,Laura,thinks that,admired,found a picture of,-Local+Picture,0,picture_np,Daniel thinks that Laura found a picture of himself.
+14,herself,Hannah,Rachel,James,thought that,criticized,bought a picture of,+Local+Coarg,1,coarg,Hannah thought that Rachel criticized herself.
+14,herself,Hannah,Rachel,James,thought that,criticized,bought a picture of,+Local+Picture,1,picture_np,Hannah thought that Rachel bought a picture of herself.
+14,herself,Hannah,Rachel,James,thought that,criticized,bought a picture of,-Local+Coarg,0,coarg,Hannah thought that James criticized herself.
+14,herself,Hannah,Rachel,James,thought that,criticized,bought a picture of,-Local+Picture,0,picture_np,Hannah thought that James bought a picture of herself.
+15,himself,Ben,John,Emily,believes that,photographed,looked at a picture of,+Local+Coarg,1,coarg,Ben believes that John photographed himself.
+15,himself,Ben,John,Emily,believes that,photographed,looked at a picture of,+Local+Picture,1,picture_np,Ben believes that John looked at a picture of himself.
+15,himself,Ben,John,Emily,believes that,photographed,looked at a picture of,-Local+Coarg,0,coarg,Ben believes that Emily photographed himself.
+15,himself,Ben,John,Emily,believes that,photographed,looked at a picture of,-Local+Picture,0,picture_np,Ben believes that Emily looked at a picture of himself.
+16,herself,Susan,Rebecca,Peter,was glad that,humiliated,saw a picture of,+Local+Coarg,1,coarg,Susan was glad that Rebecca humiliated herself.
+16,herself,Susan,Rebecca,Peter,was glad that,humiliated,saw a picture of,+Local+Picture,1,picture_np,Susan was glad that Rebecca saw a picture of herself.
+16,herself,Susan,Rebecca,Peter,was glad that,humiliated,saw a picture of,-Local+Coarg,0,coarg,Susan was glad that Peter humiliated herself.
+16,herself,Susan,Rebecca,Peter,was glad that,humiliated,saw a picture of,-Local+Picture,0,picture_np,Susan was glad that Peter saw a picture of herself.
+17,himself,Tom,Robert,Emma,thinks that,defended,liked a picture of,+Local+Coarg,1,coarg,Tom thinks that Robert defended himself.
+17,himself,Tom,Robert,Emma,thinks that,defended,liked a picture of,+Local+Picture,1,picture_np,Tom thinks that Robert liked a picture of himself.
+17,himself,Tom,Robert,Emma,thinks that,defended,liked a picture of,-Local+Coarg,0,coarg,Tom thinks that Emma defended himself.
+17,himself,Tom,Robert,Emma,thinks that,defended,liked a picture of,-Local+Picture,0,picture_np,Tom thinks that Emma liked a picture of himself.
+18,herself,Anna,Laura,Michael,was upset that,praised,found a picture of,+Local+Coarg,1,coarg,Anna was upset that Laura praised herself.
+18,herself,Anna,Laura,Michael,was upset that,praised,found a picture of,+Local+Picture,1,picture_np,Anna was upset that Laura found a picture of herself.
+18,herself,Anna,Laura,Michael,was upset that,praised,found a picture of,-Local+Coarg,0,coarg,Anna was upset that Michael praised herself.
+18,herself,Anna,Laura,Michael,was upset that,praised,found a picture of,-Local+Picture,0,picture_np,Anna was upset that Michael found a picture of herself.
+19,himself,Peter,Daniel,Susan,believes that,blamed,bought a picture of,+Local+Coarg,1,coarg,Peter believes that Daniel blamed himself.
+19,himself,Peter,Daniel,Susan,believes that,blamed,bought a picture of,+Local+Picture,1,picture_np,Peter believes that Daniel bought a picture of himself.
+19,himself,Peter,Daniel,Susan,believes that,blamed,bought a picture of,-Local+Coarg,0,coarg,Peter believes that Susan blamed himself.
+19,himself,Peter,Daniel,Susan,believes that,blamed,bought a picture of,-Local+Picture,0,picture_np,Peter believes that Susan bought a picture of himself.
+20,herself,Emily,Hannah,Ben,was glad that,embarrassed,looked at a picture of,+Local+Coarg,1,coarg,Emily was glad that Hannah embarrassed herself.
+20,herself,Emily,Hannah,Ben,was glad that,embarrassed,looked at a picture of,+Local+Picture,1,picture_np,Emily was glad that Hannah looked at a picture of herself.
+20,herself,Emily,Hannah,Ben,was glad that,embarrassed,looked at a picture of,-Local+Coarg,0,coarg,Emily was glad that Ben embarrassed herself.
+20,herself,Emily,Hannah,Ben,was glad that,embarrassed,looked at a picture of,-Local+Picture,0,picture_np,Emily was glad that Ben looked at a picture of herself.
+21,himself,John,James,Rebecca,thought that,humiliated,saw a picture of,+Local+Coarg,1,coarg,John thought that James humiliated himself.
+21,himself,John,James,Rebecca,thought that,humiliated,saw a picture of,+Local+Picture,1,picture_np,John thought that James saw a picture of himself.
+21,himself,John,James,Rebecca,thought that,humiliated,saw a picture of,-Local+Coarg,0,coarg,John thought that Rebecca humiliated himself.
+21,himself,John,James,Rebecca,thought that,humiliated,saw a picture of,-Local+Picture,0,picture_np,John thought that Rebecca saw a picture of himself.
+22,herself,Rachel,Mary,David,thinks that,admired,liked a picture of,+Local+Coarg,1,coarg,Rachel thinks that Mary admired herself.
+22,herself,Rachel,Mary,David,thinks that,admired,liked a picture of,+Local+Picture,1,picture_np,Rachel thinks that Mary liked a picture of herself.
+22,herself,Rachel,Mary,David,thinks that,admired,liked a picture of,-Local+Coarg,0,coarg,Rachel thinks that David admired herself.
+22,herself,Rachel,Mary,David,thinks that,admired,liked a picture of,-Local+Picture,0,picture_np,Rachel thinks that David liked a picture of herself.
+23,himself,Michael,Tom,Anna,believes that,criticized,found a picture of,+Local+Coarg,1,coarg,Michael believes that Tom criticized himself.
+23,himself,Michael,Tom,Anna,believes that,criticized,found a picture of,+Local+Picture,1,picture_np,Michael believes that Tom found a picture of himself.
+23,himself,Michael,Tom,Anna,believes that,criticized,found a picture of,-Local+Coarg,0,coarg,Michael believes that Anna criticized himself.
+23,himself,Michael,Tom,Anna,believes that,criticized,found a picture of,-Local+Picture,0,picture_np,Michael believes that Anna found a picture of himself.
+24,herself,Laura,Emma,Robert,was glad that,photographed,bought a picture of,+Local+Coarg,1,coarg,Laura was glad that Emma photographed herself.
+24,herself,Laura,Emma,Robert,was glad that,photographed,bought a picture of,+Local+Picture,1,picture_np,Laura was glad that Emma bought a picture of herself.
+24,herself,Laura,Emma,Robert,was glad that,photographed,bought a picture of,-Local+Coarg,0,coarg,Laura was glad that Robert photographed herself.
+24,herself,Laura,Emma,Robert,was glad that,photographed,bought a picture of,-Local+Picture,0,picture_np,Laura was glad that Robert bought a picture of herself.
+25,himself,David,Ben,Hannah,thinks that,praised,looked at a picture of,+Local+Coarg,1,coarg,David thinks that Ben praised himself.
+25,himself,David,Ben,Hannah,thinks that,praised,looked at a picture of,+Local+Picture,1,picture_np,David thinks that Ben looked at a picture of himself.
+25,himself,David,Ben,Hannah,thinks that,praised,looked at a picture of,-Local+Coarg,0,coarg,David thinks that Hannah praised himself.
+25,himself,David,Ben,Hannah,thinks that,praised,looked at a picture of,-Local+Picture,0,picture_np,David thinks that Hannah looked at a picture of himself.
+26,herself,Rebecca,Susan,Peter,was upset that,defended,saw a picture of,+Local+Coarg,1,coarg,Rebecca was upset that Susan defended herself.
+26,herself,Rebecca,Susan,Peter,was upset that,defended,saw a picture of,+Local+Picture,1,picture_np,Rebecca was upset that Susan saw a picture of herself.
+26,herself,Rebecca,Susan,Peter,was upset that,defended,saw a picture of,-Local+Coarg,0,coarg,Rebecca was upset that Peter defended herself.
+26,herself,Rebecca,Susan,Peter,was upset that,defended,saw a picture of,-Local+Picture,0,picture_np,Rebecca was upset that Peter saw a picture of herself.
+27,himself,James,Michael,Emily,believes that,embarrassed,liked a picture of,+Local+Coarg,1,coarg,James believes that Michael embarrassed himself.
+27,himself,James,Michael,Emily,believes that,embarrassed,liked a picture of,+Local+Picture,1,picture_np,James believes that Michael liked a picture of himself.
+27,himself,James,Michael,Emily,believes that,embarrassed,liked a picture of,-Local+Coarg,0,coarg,James believes that Emily embarrassed himself.
+27,himself,James,Michael,Emily,believes that,embarrassed,liked a picture of,-Local+Picture,0,picture_np,James believes that Emily liked a picture of himself.
+28,herself,Emma,Rachel,Tom,was glad that,blamed,found a picture of,+Local+Coarg,1,coarg,Emma was glad that Rachel blamed herself.
+28,herself,Emma,Rachel,Tom,was glad that,blamed,found a picture of,+Local+Picture,1,picture_np,Emma was glad that Rachel found a picture of herself.
+28,herself,Emma,Rachel,Tom,was glad that,blamed,found a picture of,-Local+Coarg,0,coarg,Emma was glad that Tom blamed herself.
+28,herself,Emma,Rachel,Tom,was glad that,blamed,found a picture of,-Local+Picture,0,picture_np,Emma was glad that Tom found a picture of herself.
+29,himself,Robert,Daniel,Mary,thought that,admired,bought a picture of,+Local+Coarg,1,coarg,Robert thought that Daniel admired himself.
+29,himself,Robert,Daniel,Mary,thought that,admired,bought a picture of,+Local+Picture,1,picture_np,Robert thought that Daniel bought a picture of himself.
+29,himself,Robert,Daniel,Mary,thought that,admired,bought a picture of,-Local+Coarg,0,coarg,Robert thought that Mary admired himself.
+29,himself,Robert,Daniel,Mary,thought that,admired,bought a picture of,-Local+Picture,0,picture_np,Robert thought that Mary bought a picture of himself.
+30,herself,Mary,Anna,John,thinks that,humiliated,looked at a picture of,+Local+Coarg,1,coarg,Mary thinks that Anna humiliated herself.
+30,herself,Mary,Anna,John,thinks that,humiliated,looked at a picture of,+Local+Picture,1,picture_np,Mary thinks that Anna looked at a picture of herself.
+30,herself,Mary,Anna,John,thinks that,humiliated,looked at a picture of,-Local+Coarg,0,coarg,Mary thinks that John humiliated herself.
+30,herself,Mary,Anna,John,thinks that,humiliated,looked at a picture of,-Local+Picture,0,picture_np,Mary thinks that John looked at a picture of herself.
+31,himself,Daniel,Peter,Laura,believes that,photographed,saw a picture of,+Local+Coarg,1,coarg,Daniel believes that Peter photographed himself.
+31,himself,Daniel,Peter,Laura,believes that,photographed,saw a picture of,+Local+Picture,1,picture_np,Daniel believes that Peter saw a picture of himself.
+31,himself,Daniel,Peter,Laura,believes that,photographed,saw a picture of,-Local+Coarg,0,coarg,Daniel believes that Laura photographed himself.
+31,himself,Daniel,Peter,Laura,believes that,photographed,saw a picture of,-Local+Picture,0,picture_np,Daniel believes that Laura saw a picture of himself.
+32,herself,Hannah,Rebecca,James,was glad that,criticized,liked a picture of,+Local+Coarg,1,coarg,Hannah was glad that Rebecca criticized herself.
+32,herself,Hannah,Rebecca,James,was glad that,criticized,liked a picture of,+Local+Picture,1,picture_np,Hannah was glad that Rebecca liked a picture of herself.
+32,herself,Hannah,Rebecca,James,was glad that,criticized,liked a picture of,-Local+Coarg,0,coarg,Hannah was glad that James criticized herself.
+32,herself,Hannah,Rebecca,James,was glad that,criticized,liked a picture of,-Local+Picture,0,picture_np,Hannah was glad that James liked a picture of herself.

@@ -1,0 +1,129 @@
+item_id,condition,sentence,target,surprisal
+1,+Local+Coarg,John believes that Bill criticized himself.,himself,9.625
+1,+Local+Picture,John believes that Bill saw a picture of himself.,himself,3.96875
+1,-Local+Coarg,John believes that Mary criticized himself.,himself,10.125
+1,-Local+Picture,John believes that Mary saw a picture of himself.,himself,4.15625
+2,+Local+Coarg,Sarah thinks that Emma praised herself.,herself,8.9375
+2,+Local+Picture,Sarah thinks that Emma liked a picture of herself.,herself,3.703125
+2,-Local+Coarg,Sarah thinks that Daniel praised herself.,herself,9.8125
+2,-Local+Picture,Sarah thinks that Daniel liked a picture of herself.,herself,5.6875
+3,+Local+Coarg,Peter was glad that James defended himself.,himself,3.875
+3,+Local+Picture,Peter was glad that James found a picture of himself.,himself,4.0625
+3,-Local+Coarg,Peter was glad that Laura defended himself.,himself,6.9375
+3,-Local+Picture,Peter was glad that Laura found a picture of himself.,himself,6.59375
+4,+Local+Coarg,Rachel believes that Hannah embarrassed herself.,herself,2.96875
+4,+Local+Picture,Rachel believes that Hannah bought a picture of herself.,herself,2.609375
+4,-Local+Coarg,Rachel believes that Michael embarrassed herself.,herself,6.53125
+4,-Local+Picture,Rachel believes that Michael bought a picture of herself.,herself,5.875
+5,+Local+Coarg,David thinks that Tom blamed himself.,himself,5.3125
+5,+Local+Picture,David thinks that Tom looked at a picture of himself.,himself,2.796875
+5,-Local+Coarg,David thinks that Susan blamed himself.,himself,7.25
+5,-Local+Picture,David thinks that Susan looked at a picture of himself.,himself,5.21875
+6,+Local+Coarg,Laura thought that Mary admired herself.,herself,9.375
+6,+Local+Picture,Laura thought that Mary saw a picture of herself.,herself,3.703125
+6,-Local+Coarg,Laura thought that Robert admired herself.,herself,13.1875
+6,-Local+Picture,Laura thought that Robert saw a picture of herself.,herself,6.0
+7,+Local+Coarg,Michael believes that Daniel humiliated himself.,himself,5.875
+7,+Local+Picture,Michael believes that Daniel liked a picture of himself.,himself,4.15625
+7,-Local+Coarg,Michael believes that Anna humiliated himself.,himself,7.125
+7,-Local+Picture,Michael believes that Anna liked a picture of himself.,himself,5.78125
+8,+Local+Coarg,Rebecca was glad that Emily photographed herself.,herself,10.1875
+8,+Local+Picture,Rebecca was glad that Emily found a picture of herself.,herself,4.25
+8,-Local+Coarg,Rebecca was glad that Ben photographed herself.,herself,12.0625
+8,-Local+Picture,Rebecca was glad that Ben found a picture of herself.,herself,7.40625
+9,+Local+Coarg,James was upset that Peter praised himself.,himself,3.15625
+9,+Local+Picture,James was upset that Peter bought a picture of himself.,himself,4.5
+9,-Local+Coarg,James was upset that Hannah praised himself.,himself,5.40625
+9,-Local+Picture,James was upset that Hannah bought a picture of himself.,himself,8.125
+10,+Local+Coarg,Emma thinks that Susan defended herself.,herself,2.34375
+10,+Local+Picture,Emma thinks that Susan looked at a picture of herself.,herself,3.875
+10,-Local+Coarg,Emma thinks that David defended herself.,herself,6.1875
+10,-Local+Picture,Emma thinks that David looked at a picture of herself.,herself,6.59375
+11,+Local+Coarg,Robert believes that Ben embarrassed himself.,himself,2.703125
+11,+Local+Picture,Robert believes that Ben saw a picture of himself.,himself,4.59375
+11,-Local+Coarg,Robert believes that Rachel embarrassed himself.,himself,6.09375
+11,-Local+Picture,Robert believes that Rachel saw a picture of himself.,himself,5.3125
+12,+Local+Coarg,Mary was glad that Anna blamed herself.,herself,1.53125
+12,+Local+Picture,Mary was glad that Anna liked a picture of herself.,herself,3.96875
+12,-Local+Coarg,Mary was glad that Tom blamed herself.,herself,8.125
+12,-Local+Picture,Mary was glad that Tom liked a picture of herself.,herself,6.3125
+13,+Local+Coarg,Daniel thinks that Michael admired himself.,himself,8.9375
+13,+Local+Picture,Daniel thinks that Michael found a picture of himself.,himself,3.421875
+13,-Local+Coarg,Daniel thinks that Laura admired himself.,himself,8.25
+13,-Local+Picture,Daniel thinks that Laura found a picture of himself.,himself,6.6875
+14,+Local+Coarg,Hannah thought that Rachel criticized herself.,herself,10.6875
+14,+Local+Picture,Hannah thought that Rachel bought a picture of herself.,herself,2.890625
+14,-Local+Coarg,Hannah thought that James criticized herself.,herself,12.625
+14,-Local+Picture,Hannah thought that James bought a picture of herself.,herself,8.375
+15,+Local+Coarg,Ben believes that John photographed himself.,himself,7.75
+15,+Local+Picture,Ben believes that John looked at a picture of himself.,himself,3.875
+15,-Local+Coarg,Ben believes that Emily photographed himself.,himself,8.0
+15,-Local+Picture,Ben believes that Emily looked at a picture of himself.,himself,5.3125
+16,+Local+Coarg,Susan was glad that Rebecca humiliated herself.,herself,3.96875
+16,+Local+Picture,Susan was glad that Rebecca saw a picture of herself.,herself,6.5
+16,-Local+Coarg,Susan was glad that Peter humiliated herself.,herself,7.03125
+16,-Local+Picture,Susan was glad that Peter saw a picture of herself.,herself,6.9375
+17,+Local+Coarg,Tom thinks that Robert defended himself.,himself,1.265625
+17,+Local+Picture,Tom thinks that Robert liked a picture of himself.,himself,3.703125
+17,-Local+Coarg,Tom thinks that Emma defended himself.,himself,5.71875
+17,-Local+Picture,Tom thinks that Emma liked a picture of himself.,himself,6.8125
+18,+Local+Coarg,Anna was upset that Laura praised herself.,herself,5.0625
+18,+Local+Picture,Anna was upset that Laura found a picture of herself.,herself,4.96875
+18,-Local+Coarg,Anna was upset that Michael praised herself.,herself,8.0
+18,-Local+Picture,Anna was upset that Michael found a picture of herself.,herself,6.75
+19,+Local+Coarg,Peter believes that Daniel blamed himself.,himself,5.125
+19,+Local+Picture,Peter believes that Daniel bought a picture of himself.,himself,3.0625
+19,-Local+Coarg,Peter believes that Susan blamed himself.,himself,7.34375
+19,-Local+Picture,Peter believes that Susan bought a picture of himself.,himself,5.3125
+20,+Local+Coarg,Emily was glad that Hannah embarrassed herself.,herself,3.515625
+20,+Local+Picture,Emily was glad that Hannah looked at a picture of herself.,herself,3.875
+20,-Local+Coarg,Emily was glad that Ben embarrassed herself.,herself,7.71875
+20,-Local+Picture,Emily was glad that Ben looked at a picture of herself.,herself,7.53125
+21,+Local+Coarg,John thought that James humiliated himself.,himself,5.78125
+21,+Local+Picture,John thought that James saw a picture of himself.,himself,3.25
+21,-Local+Coarg,John thought that Rebecca humiliated himself.,himself,7.46875
+21,-Local+Picture,John thought that Rebecca saw a picture of himself.,himself,4.15625
+22,+Local+Coarg,Rachel thinks that Mary admired herself.,herself,8.125
+22,+Local+Picture,Rachel thinks that Mary liked a picture of herself.,herself,3.96875
+22,-Local+Coarg,Rachel thinks that David admired herself.,herself,8.625
+22,-Local+Picture,Rachel thinks that David liked a picture of herself.,herself,5.875
+23,+Local+Coarg,Michael believes that Tom criticized himself.,himself,8.625
+23,+Local+Picture,Michael believes that Tom found a picture of himself.,himself,3.34375
+23,-Local+Coarg,Michael believes that Anna criticized himself.,himself,10.4375
+23,-Local+Picture,Michael believes that Anna found a picture of himself.,himself,6.40625
+24,+Local+Coarg,Laura was glad that Emma photographed herself.,herself,8.3125
+24,+Local+Picture,Laura was glad that Emma bought a picture of herself.,herself,4.40625
+24,-Local+Coarg,Laura was glad that Robert photographed herself.,herself,11.8125
+24,-Local+Picture,Laura was glad that Robert bought a picture of herself.,herself,8.0
+25,+Local+Coarg,David thinks that Ben praised himself.,himself,6.34375
+25,+Local+Picture,David thinks that Ben looked at a picture of himself.,himself,3.875
+25,-Local+Coarg,David thinks that Hannah praised himself.,himself,9.0
+25,-Local+Picture,David thinks that Hannah looked at a picture of himself.,himself,5.875
+26,+Local+Coarg,Rebecca was upset that Susan defended herself.,herself,5.21875
+26,+Local+Picture,Rebecca was upset that Susan saw a picture of herself.,herself,6.84375
+26,-Local+Coarg,Rebecca was upset that Peter defended herself.,herself,9.0
+26,-Local+Picture,Rebecca was upset that Peter saw a picture of herself.,herself,6.40625
+27,+Local+Coarg,James believes that Michael embarrassed himself.,himself,2.15625
+27,+Local+Picture,James believes that Michael liked a picture of himself.,himself,2.96875
+27,-Local+Coarg,James believes that Emily embarrassed himself.,himself,6.40625
+27,-Local+Picture,James believes that Emily liked a picture of himself.,himself,6.59375
+28,+Local+Coarg,Emma was glad that Rachel blamed herself.,herself,1.8046875
+28,+Local+Picture,Emma was glad that Rachel found a picture of herself.,herself,4.6875
+28,-Local+Coarg,Emma was glad that Tom blamed herself.,herself,8.0625
+28,-Local+Picture,Emma was glad that Tom found a picture of herself.,herself,8.125
+29,+Local+Coarg,Robert thought that Daniel admired himself.,himself,8.8125
+29,+Local+Picture,Robert thought that Daniel bought a picture of himself.,himself,2.4375
+29,-Local+Coarg,Robert thought that Mary admired himself.,himself,10.5
+29,-Local+Picture,Robert thought that Mary bought a picture of himself.,himself,8.0
+30,+Local+Coarg,Mary thinks that Anna humiliated herself.,herself,6.5
+30,+Local+Picture,Mary thinks that Anna looked at a picture of herself.,herself,3.0625
+30,-Local+Coarg,Mary thinks that John humiliated herself.,herself,8.3125
+30,-Local+Picture,Mary thinks that John looked at a picture of herself.,herself,6.03125
+31,+Local+Coarg,Daniel believes that Peter photographed himself.,himself,6.125
+31,+Local+Picture,Daniel believes that Peter saw a picture of himself.,himself,4.0625
+31,-Local+Coarg,Daniel believes that Laura photographed himself.,himself,8.625
+31,-Local+Picture,Daniel believes that Laura saw a picture of himself.,himself,4.875
+32,+Local+Coarg,Hannah was glad that Rebecca criticized herself.,herself,9.8125
+32,+Local+Picture,Hannah was glad that Rebecca liked a picture of herself.,herself,4.25
+32,-Local+Coarg,Hannah was glad that James criticized herself.,herself,9.625
+32,-Local+Picture,Hannah was glad that James liked a picture of herself.,herself,6.03125

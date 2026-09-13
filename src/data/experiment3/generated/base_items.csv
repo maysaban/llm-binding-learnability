@@ -1,0 +1,33 @@
+item_id,target,matrix_antecedent,local_matching,local_mismatching,matrix_frame,coarg_verb,picture_frame
+1,himself,John,Bill,Mary,believes that,criticized,saw a picture of
+2,herself,Sarah,Emma,Daniel,thinks that,praised,liked a picture of
+3,himself,Peter,James,Laura,was glad that,defended,found a picture of
+4,herself,Rachel,Hannah,Michael,believes that,embarrassed,bought a picture of
+5,himself,David,Tom,Susan,thinks that,blamed,looked at a picture of
+6,herself,Laura,Mary,Robert,thought that,admired,saw a picture of
+7,himself,Michael,Daniel,Anna,believes that,humiliated,liked a picture of
+8,herself,Rebecca,Emily,Ben,was glad that,photographed,found a picture of
+9,himself,James,Peter,Hannah,was upset that,praised,bought a picture of
+10,herself,Emma,Susan,David,thinks that,defended,looked at a picture of
+11,himself,Robert,Ben,Rachel,believes that,embarrassed,saw a picture of
+12,herself,Mary,Anna,Tom,was glad that,blamed,liked a picture of
+13,himself,Daniel,Michael,Laura,thinks that,admired,found a picture of
+14,herself,Hannah,Rachel,James,thought that,criticized,bought a picture of
+15,himself,Ben,John,Emily,believes that,photographed,looked at a picture of
+16,herself,Susan,Rebecca,Peter,was glad that,humiliated,saw a picture of
+17,himself,Tom,Robert,Emma,thinks that,defended,liked a picture of
+18,herself,Anna,Laura,Michael,was upset that,praised,found a picture of
+19,himself,Peter,Daniel,Susan,believes that,blamed,bought a picture of
+20,herself,Emily,Hannah,Ben,was glad that,embarrassed,looked at a picture of
+21,himself,John,James,Rebecca,thought that,humiliated,saw a picture of
+22,herself,Rachel,Mary,David,thinks that,admired,liked a picture of
+23,himself,Michael,Tom,Anna,believes that,criticized,found a picture of
+24,herself,Laura,Emma,Robert,was glad that,photographed,bought a picture of
+25,himself,David,Ben,Hannah,thinks that,praised,looked at a picture of
+26,herself,Rebecca,Susan,Peter,was upset that,defended,saw a picture of
+27,himself,James,Michael,Emily,believes that,embarrassed,liked a picture of
+28,herself,Emma,Rachel,Tom,was glad that,blamed,found a picture of
+29,himself,Robert,Daniel,Mary,thought that,admired,bought a picture of
+30,herself,Mary,Anna,John,thinks that,humiliated,looked at a picture of
+31,himself,Daniel,Peter,Laura,believes that,photographed,saw a picture of
+32,herself,Hannah,Rebecca,James,was glad that,criticized,liked a picture of

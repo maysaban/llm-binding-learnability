@@ -1,0 +1,9 @@
+Model: Qwen-2.5-7B
+Experiment: Exp 1: Locality domains
+Formula: surprisal ~ local_c * matrix_c + (1 | item_id)
+Engine: by-item contrast t-tests (df = 31)
+
+Intercept             estimate=   8.719  se= 0.431  t(31)= 20.21  p=2.091e-19
+local_c               estimate=  -3.710  se= 0.291  t(31)=-12.74  p=7.394e-14
+matrix_c              estimate=  -2.170  se= 0.259  t(31)= -8.38  p=1.839e-09
+local_c:matrix_c      estimate=   2.915  se= 0.367  t(31)=  7.94  p=5.84e-09

@@ -1,0 +1,129 @@
+item_id,condition,sentence,target,surprisal
+1,+Local+Coarg,John believes that Bill criticized himself.,himself,7.645895957946777
+1,+Local+Picture,John believes that Bill saw a picture of himself.,himself,5.14383602142334
+1,-Local+Coarg,John believes that Mary criticized himself.,himself,9.286580085754395
+1,-Local+Picture,John believes that Mary saw a picture of himself.,himself,7.0633673667907715
+2,+Local+Coarg,Sarah thinks that Emma praised herself.,herself,8.002294540405273
+2,+Local+Picture,Sarah thinks that Emma liked a picture of herself.,herself,6.6221699714660645
+2,-Local+Coarg,Sarah thinks that Daniel praised herself.,herself,8.490365028381348
+2,-Local+Picture,Sarah thinks that Daniel liked a picture of herself.,herself,6.764235973358154
+3,+Local+Coarg,Peter was glad that James defended himself.,himself,3.50362491607666
+3,+Local+Picture,Peter was glad that James found a picture of himself.,himself,5.075550556182861
+3,-Local+Coarg,Peter was glad that Laura defended himself.,himself,5.616389274597168
+3,-Local+Picture,Peter was glad that Laura found a picture of himself.,himself,7.399019718170166
+4,+Local+Coarg,Rachel believes that Hannah embarrassed herself.,herself,4.828312397003174
+4,+Local+Picture,Rachel believes that Hannah bought a picture of herself.,herself,4.669228553771973
+4,-Local+Coarg,Rachel believes that Michael embarrassed herself.,herself,6.024442195892334
+4,-Local+Picture,Rachel believes that Michael bought a picture of herself.,herself,6.291151523590088
+5,+Local+Coarg,David thinks that Tom blamed himself.,himself,5.344480514526367
+5,+Local+Picture,David thinks that Tom looked at a picture of himself.,himself,5.270802974700928
+5,-Local+Coarg,David thinks that Susan blamed himself.,himself,7.19020938873291
+5,-Local+Picture,David thinks that Susan looked at a picture of himself.,himself,7.3183722496032715
+6,+Local+Coarg,Laura thought that Mary admired herself.,herself,7.310129165649414
+6,+Local+Picture,Laura thought that Mary saw a picture of herself.,herself,5.830782890319824
+6,-Local+Coarg,Laura thought that Robert admired herself.,herself,8.372270584106445
+6,-Local+Picture,Laura thought that Robert saw a picture of herself.,herself,5.962630271911621
+7,+Local+Coarg,Michael believes that Daniel humiliated himself.,himself,5.223532676696777
+7,+Local+Picture,Michael believes that Daniel liked a picture of himself.,himself,4.944622039794922
+7,-Local+Coarg,Michael believes that Anna humiliated himself.,himself,6.948189735412598
+7,-Local+Picture,Michael believes that Anna liked a picture of himself.,himself,7.20016622543335
+8,+Local+Coarg,Rebecca was glad that Emily photographed herself.,herself,7.3537774085998535
+8,+Local+Picture,Rebecca was glad that Emily found a picture of herself.,herself,5.090792179107666
+8,-Local+Coarg,Rebecca was glad that Ben photographed herself.,herself,8.939770698547363
+8,-Local+Picture,Rebecca was glad that Ben found a picture of herself.,herself,6.828262805938721
+9,+Local+Coarg,James was upset that Peter praised himself.,himself,7.6783599853515625
+9,+Local+Picture,James was upset that Peter bought a picture of himself.,himself,5.546293258666992
+9,-Local+Coarg,James was upset that Hannah praised himself.,himself,10.381690979003906
+9,-Local+Picture,James was upset that Hannah bought a picture of himself.,himself,8.950671195983887
+10,+Local+Coarg,Emma thinks that Susan defended herself.,herself,3.8804733753204346
+10,+Local+Picture,Emma thinks that Susan looked at a picture of herself.,herself,5.943388938903809
+10,-Local+Coarg,Emma thinks that David defended herself.,herself,6.400883197784424
+10,-Local+Picture,Emma thinks that David looked at a picture of herself.,herself,7.76917839050293
+11,+Local+Coarg,Robert believes that Ben embarrassed himself.,himself,6.0685343742370605
+11,+Local+Picture,Robert believes that Ben saw a picture of himself.,himself,4.733599662780762
+11,-Local+Coarg,Robert believes that Rachel embarrassed himself.,himself,8.033748626708984
+11,-Local+Picture,Robert believes that Rachel saw a picture of himself.,himself,6.72810173034668
+12,+Local+Coarg,Mary was glad that Anna blamed herself.,herself,5.3931379318237305
+12,+Local+Picture,Mary was glad that Anna liked a picture of herself.,herself,5.672361850738525
+12,-Local+Coarg,Mary was glad that Tom blamed herself.,herself,7.521639347076416
+12,-Local+Picture,Mary was glad that Tom liked a picture of herself.,herself,7.29376745223999
+13,+Local+Coarg,Daniel thinks that Michael admired himself.,himself,7.118864059448242
+13,+Local+Picture,Daniel thinks that Michael found a picture of himself.,himself,5.085184097290039
+13,-Local+Coarg,Daniel thinks that Laura admired himself.,himself,8.934091567993164
+13,-Local+Picture,Daniel thinks that Laura found a picture of himself.,himself,6.893866539001465
+14,+Local+Coarg,Hannah thought that Rachel criticized herself.,herself,6.818105697631836
+14,+Local+Picture,Hannah thought that Rachel bought a picture of herself.,herself,5.090709686279297
+14,-Local+Coarg,Hannah thought that James criticized herself.,herself,9.8162202835083
+14,-Local+Picture,Hannah thought that James bought a picture of herself.,herself,8.094096183776855
+15,+Local+Coarg,Ben believes that John photographed himself.,himself,7.300663948059082
+15,+Local+Picture,Ben believes that John looked at a picture of himself.,himself,5.210976600646973
+15,-Local+Coarg,Ben believes that Emily photographed himself.,himself,9.31441593170166
+15,-Local+Picture,Ben believes that Emily looked at a picture of himself.,himself,7.4278411865234375
+16,+Local+Coarg,Susan was glad that Rebecca humiliated herself.,herself,4.021885871887207
+16,+Local+Picture,Susan was glad that Rebecca saw a picture of herself.,herself,5.087813377380371
+16,-Local+Coarg,Susan was glad that Peter humiliated herself.,herself,6.306119441986084
+16,-Local+Picture,Susan was glad that Peter saw a picture of herself.,herself,6.804068565368652
+17,+Local+Coarg,Tom thinks that Robert defended himself.,himself,3.172894239425659
+17,+Local+Picture,Tom thinks that Robert liked a picture of himself.,himself,4.722902297973633
+17,-Local+Coarg,Tom thinks that Emma defended himself.,himself,6.239522457122803
+17,-Local+Picture,Tom thinks that Emma liked a picture of himself.,himself,8.13316822052002
+18,+Local+Coarg,Anna was upset that Laura praised herself.,herself,7.2794270515441895
+18,+Local+Picture,Anna was upset that Laura found a picture of herself.,herself,4.984504222869873
+18,-Local+Coarg,Anna was upset that Michael praised herself.,herself,8.986254692077637
+18,-Local+Picture,Anna was upset that Michael found a picture of herself.,herself,6.515254497528076
+19,+Local+Coarg,Peter believes that Daniel blamed himself.,himself,5.3745951652526855
+19,+Local+Picture,Peter believes that Daniel bought a picture of himself.,himself,5.452785491943359
+19,-Local+Coarg,Peter believes that Susan blamed himself.,himself,7.4033355712890625
+19,-Local+Picture,Peter believes that Susan bought a picture of himself.,himself,7.641651153564453
+20,+Local+Coarg,Emily was glad that Hannah embarrassed herself.,herself,4.084264755249023
+20,+Local+Picture,Emily was glad that Hannah looked at a picture of herself.,herself,5.230491638183594
+20,-Local+Coarg,Emily was glad that Ben embarrassed herself.,herself,6.346466541290283
+20,-Local+Picture,Emily was glad that Ben looked at a picture of herself.,herself,7.728128433227539
+21,+Local+Coarg,John thought that James humiliated himself.,himself,5.01704740524292
+21,+Local+Picture,John thought that James saw a picture of himself.,himself,5.5501389503479
+21,-Local+Coarg,John thought that Rebecca humiliated himself.,himself,6.568213939666748
+21,-Local+Picture,John thought that Rebecca saw a picture of himself.,himself,7.3017120361328125
+22,+Local+Coarg,Rachel thinks that Mary admired herself.,herself,7.237678050994873
+22,+Local+Picture,Rachel thinks that Mary liked a picture of herself.,herself,5.997989654541016
+22,-Local+Coarg,Rachel thinks that David admired herself.,herself,8.801193237304688
+22,-Local+Picture,Rachel thinks that David liked a picture of herself.,herself,7.572825908660889
+23,+Local+Coarg,Michael believes that Tom criticized himself.,himself,7.250909328460693
+23,+Local+Picture,Michael believes that Tom found a picture of himself.,himself,4.509387969970703
+23,-Local+Coarg,Michael believes that Anna criticized himself.,himself,8.940160751342773
+23,-Local+Picture,Michael believes that Anna found a picture of himself.,himself,6.8111748695373535
+24,+Local+Coarg,Laura was glad that Emma photographed herself.,herself,7.988455772399902
+24,+Local+Picture,Laura was glad that Emma bought a picture of herself.,herself,6.148074150085449
+24,-Local+Coarg,Laura was glad that Robert photographed herself.,herself,8.87035846710205
+24,-Local+Picture,Laura was glad that Robert bought a picture of herself.,herself,6.320765495300293
+25,+Local+Coarg,David thinks that Ben praised himself.,himself,7.079968452453613
+25,+Local+Picture,David thinks that Ben looked at a picture of himself.,himself,5.533448219299316
+25,-Local+Coarg,David thinks that Hannah praised himself.,himself,8.917060852050781
+25,-Local+Picture,David thinks that Hannah looked at a picture of himself.,himself,7.911316871643066
+26,+Local+Coarg,Rebecca was upset that Susan defended herself.,herself,3.6751151084899902
+26,+Local+Picture,Rebecca was upset that Susan saw a picture of herself.,herself,5.55346155166626
+26,-Local+Coarg,Rebecca was upset that Peter defended herself.,herself,5.9092631340026855
+26,-Local+Picture,Rebecca was upset that Peter saw a picture of herself.,herself,6.887462139129639
+27,+Local+Coarg,James believes that Michael embarrassed himself.,himself,6.19991397857666
+27,+Local+Picture,James believes that Michael liked a picture of himself.,himself,5.156219959259033
+27,-Local+Coarg,James believes that Emily embarrassed himself.,himself,9.011371612548828
+27,-Local+Picture,James believes that Emily liked a picture of himself.,himself,8.114067077636719
+28,+Local+Coarg,Emma was glad that Rachel blamed herself.,herself,5.63834810256958
+28,+Local+Picture,Emma was glad that Rachel found a picture of herself.,herself,5.168898582458496
+28,-Local+Coarg,Emma was glad that Tom blamed herself.,herself,7.299693584442139
+28,-Local+Picture,Emma was glad that Tom found a picture of herself.,herself,6.778570652008057
+29,+Local+Coarg,Robert thought that Daniel admired himself.,himself,7.164956569671631
+29,+Local+Picture,Robert thought that Daniel bought a picture of himself.,himself,5.251615524291992
+29,-Local+Coarg,Robert thought that Mary admired himself.,himself,8.43857192993164
+29,-Local+Picture,Robert thought that Mary bought a picture of himself.,himself,6.849261283874512
+30,+Local+Coarg,Mary thinks that Anna humiliated herself.,herself,4.434312343597412
+30,+Local+Picture,Mary thinks that Anna looked at a picture of herself.,herself,5.871888160705566
+30,-Local+Coarg,Mary thinks that John humiliated herself.,herself,6.638113498687744
+30,-Local+Picture,Mary thinks that John looked at a picture of herself.,herself,7.5971999168396
+31,+Local+Coarg,Daniel believes that Peter photographed himself.,himself,7.137244701385498
+31,+Local+Picture,Daniel believes that Peter saw a picture of himself.,himself,4.868065357208252
+31,-Local+Coarg,Daniel believes that Laura photographed himself.,himself,8.856104850769043
+31,-Local+Picture,Daniel believes that Laura saw a picture of himself.,himself,6.689419269561768
+32,+Local+Coarg,Hannah was glad that Rebecca criticized herself.,herself,7.300671577453613
+32,+Local+Picture,Hannah was glad that Rebecca liked a picture of herself.,herself,5.536012649536133
+32,-Local+Coarg,Hannah was glad that James criticized herself.,herself,10.260323524475098
+32,-Local+Picture,Hannah was glad that James liked a picture of herself.,herself,8.177510261535645

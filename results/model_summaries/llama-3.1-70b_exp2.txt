@@ -1,0 +1,9 @@
+Model: Llama-3.1-70B
+Experiment: Exp 2: Structural hierarchy
+Formula: surprisal ~ head_c * distractor_c + (1 | item_id)
+Engine: by-item contrast t-tests (df = 31)
+
+Intercept             estimate=   9.024  se= 0.325  t(31)= 27.77  p=1.823e-23
+head_c                estimate=  -3.872  se= 0.277  t(31)=-13.97  p=6.38e-15
+distractor_c          estimate=  -1.727  se= 0.249  t(31)= -6.93  p=9.016e-08
+head_c:distractor_c   estimate=   2.417  se= 0.215  t(31)= 11.25  p=1.783e-12

@@ -1,0 +1,9 @@
+Model: Qwen-2.5-7B
+Experiment: Exp 2: Structural hierarchy
+Formula: surprisal ~ head_c * distractor_c + (1 | item_id)
+Engine: by-item contrast t-tests (df = 31)
+
+Intercept             estimate=   9.556  se= 0.413  t(31)= 23.13  p=4.097e-21
+head_c                estimate=  -3.867  se= 0.476  t(31)= -8.12  p=3.582e-09
+distractor_c          estimate=  -1.845  se= 0.267  t(31)= -6.92  p=9.306e-08
+head_c:distractor_c   estimate=   1.587  se= 0.460  t(31)=  3.45  p=0.001634

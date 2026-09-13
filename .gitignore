@@ -1,0 +1,11 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+__pycache__/
+*.pyc
+.venv/
+.idea/
+llm_binding_learnability*.pdf
+analysis/output/
+results/_quick_summary.py

@@ -1,0 +1,9 @@
+Model: BabyLlama
+Experiment: Exp 3: Logophoric diagnostic
+Formula: surprisal ~ local_c * context_c + (1 | item_id)
+Engine: by-item contrast t-tests (df = 31)
+
+Intercept             estimate=   6.648  se= 0.132  t(31)= 50.50  p=2.447e-31
+local_c               estimate=  -1.919  se= 0.117  t(31)=-16.35  p=8.599e-17
+context_c             estimate=  -0.722  se= 0.252  t(31)= -2.86  p=0.007475
+local_c:context_c     estimate=   0.008  se= 0.077  t(31)=  0.11  p=0.9137

@@ -1,0 +1,9 @@
+Model: BabyLlama
+Experiment: Exp 2: Structural hierarchy
+Formula: surprisal ~ head_c * distractor_c + (1 | item_id)
+Engine: by-item contrast t-tests (df = 31)
+
+Intercept             estimate=   8.315  se= 0.306  t(31)= 27.20  p=3.373e-23
+head_c                estimate=  -3.568  se= 0.129  t(31)=-27.72  p=1.926e-23
+distractor_c          estimate=  -0.949  se= 0.066  t(31)=-14.47  p=2.494e-15
+head_c:distractor_c   estimate=   1.109  se= 0.098  t(31)= 11.35  p=1.425e-12
